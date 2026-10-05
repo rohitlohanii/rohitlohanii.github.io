@@ -1,722 +1,1439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rohit Lohani | Electrical & Instrumentation Design Engineer</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Rohit Lohani - Electrical, Instrumentation, Control and Civil Design Engineer. STP, CETP, ETP, CBG, PLC, SCADA and industrial project design.">
+<title>
+Rohit Lohani | Electrical, Instrumentation & Civil Design Engineer
+</title>
+
+<meta name="description"
+content="Rohit Lohani - Electrical, Instrumentation, Control and Civil Design Engineer specializing in STP, CETP, ETP, CBG, PLC, SCADA and industrial engineering projects.">
+
+<meta name="keywords"
+content="Rohit Lohani, Electrical Design Engineer, Instrumentation Engineer, Civil Design Engineer, PLC SCADA, STP, CETP, ETP, CBG, AutoCAD">
+
+<meta name="author"
+content="Rohit Lohani">
 
 <style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#07111f;
-  color:#eaf2ff;
-  line-height:1.6;
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:#f4f8fc;
+    color:#122033;
+
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
 }
 
 a{
-  color:inherit;
-  text-decoration:none;
+    text-decoration:none;
+    color:inherit;
 }
+
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
 
 .container{
-  width:92%;
-  max-width:1150px;
-  margin:auto;
+    width:92%;
+    max-width:1200px;
+    margin:auto;
 }
 
-/* NAVBAR */
-nav{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(7,17,31,.94);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid #243650;
-}
-
-.navbar{
-  min-height:70px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:22px;
-  font-weight:800;
-  color:#48b9ff;
-}
-
-.logo span{
-  color:white;
-}
-
-.navlinks{
-  display:flex;
-  gap:25px;
-  font-size:14px;
-}
-
-.navlinks a:hover{
-  color:#48b9ff;
-}
-
-/* HERO */
-.hero{
-  padding:85px 0;
-  background:
-    radial-gradient(circle at 80% 20%,#123a61 0,transparent 35%),
-    linear-gradient(135deg,#07111f,#0d1c30);
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.4fr .8fr;
-  gap:55px;
-  align-items:center;
-}
-
-.badge{
-  color:#48b9ff;
-  font-weight:bold;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  margin-bottom:15px;
-}
-
-h1{
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.05;
-  margin-bottom:20px;
-}
-
-h1 span{
-  color:#48b9ff;
-}
-
-.hero-text{
-  color:#aabbd0;
-  font-size:18px;
-  max-width:720px;
-}
-
-.buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-top:30px;
-}
-
-.btn{
-  padding:13px 20px;
-  border-radius:10px;
-  font-weight:bold;
-  border:1px solid #48b9ff;
-  display:inline-block;
-}
-
-.btn-primary{
-  background:#48b9ff;
-  color:#07111f;
-}
-
-.btn-secondary{
-  background:#10243b;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.profile-card{
-  background:#10243b;
-  border:1px solid #2b405b;
-  padding:25px;
-  border-radius:25px;
-  text-align:center;
-  box-shadow:0 20px 70px rgba(0,0,0,.3);
-}
-
-.profile-card img{
-  width:230px;
-  height:300px;
-  object-fit:cover;
-  object-position:center;
-  border-radius:20px;
-  border:3px solid #48b9ff;
-}
-
-.profile-card h2{
-  margin-top:18px;
-}
-
-.profile-card p{
-  color:#aabbd0;
-}
-
-/* SECTIONS */
 section{
-  padding:80px 0;
+    padding:75px 0;
 }
 
 .section-title{
-  font-size:36px;
-  margin-bottom:10px;
+    text-align:center;
+    font-size:36px;
+    color:#0b4f87;
+    margin-bottom:10px;
 }
 
-.section-sub{
-  color:#91a4bb;
-  margin-bottom:35px;
+.section-subtitle{
+    text-align:center;
+    color:#687789;
+    margin-bottom:40px;
 }
 
-/* CARDS */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+.blue{
+    color:#0878c9;
 }
 
-.card{
-  background:#0d1c30;
-  border:1px solid #243650;
-  border-radius:16px;
-  padding:25px;
-  transition:.25s;
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:9999;
+
+    background:rgba(255,255,255,.97);
+
+    border-bottom:1px solid #dce7f0;
+
+    box-shadow:
+    0 3px 20px rgba(0,0,0,.05);
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  border-color:#48b9ff;
+.nav-inner{
+    min-height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
 }
 
-.card h3{
-  color:#48b9ff;
-  margin-bottom:10px;
+.logo{
+    font-size:22px;
+    font-weight:800;
+    color:#0b4f87;
 }
 
-.card p{
-  color:#aabbd0;
+.logo span{
+    color:#1598dc;
 }
 
-/* TAGS */
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:25px;
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+    font-size:14px;
+    font-weight:600;
 }
 
-.tag{
-  padding:8px 13px;
-  border-radius:30px;
-  background:#10243b;
-  border:1px solid #29425f;
-  color:#d7e7f8;
-  font-size:14px;
+.nav-links a{
+    color:#26384a;
+    transition:.25s;
 }
 
-/* EXPERIENCE */
+.nav-links a:hover{
+    color:#0878c9;
+}
+
+.nav-button{
+    background:#0878c9;
+    color:white !important;
+
+    padding:10px 17px;
+    border-radius:8px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    position:relative;
+
+    min-height:650px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(30,159,220,.35),
+        transparent 30%
+    ),
+    linear-gradient(
+        135deg,
+        #06365f,
+        #0879bd 55%,
+        #0b3d67
+    );
+
+    color:white;
+}
+
+/* decorative engineering lines */
+
+.hero:before{
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    right:-180px;
+    bottom:-230px;
+
+    border:80px solid rgba(255,255,255,.05);
+
+    border-radius:50%;
+}
+
+.hero:after{
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    left:-180px;
+    top:-160px;
+
+    border:55px solid rgba(255,255,255,.04);
+
+    border-radius:50%;
+}
+
+.hero-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+    1.25fr
+    .75fr;
+
+    align-items:center;
+
+    gap:60px;
+}
+
+.hero-small{
+    font-size:14px;
+
+    font-weight:bold;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+    color:#c9edff;
+}
+
+.hero h1{
+    font-size:
+    clamp(40px,6vw,70px);
+
+    line-height:1.05;
+
+    margin-bottom:18px;
+}
+
+.hero h1 span{
+    color:#72d4ff;
+}
+
+.hero-title{
+    font-size:21px;
+    font-weight:600;
+
+    margin-bottom:15px;
+}
+
+.hero-description{
+    max-width:650px;
+
+    color:#e1f3ff;
+
+    font-size:17px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:27px;
+}
+
+.btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 20px;
+
+    border-radius:9px;
+
+    font-weight:bold;
+
+    border:1px solid transparent;
+
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-white{
+    background:white;
+    color:#0878c9;
+}
+
+.btn-outline{
+    border-color:white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#0878c9;
+}
+
+.btn-green{
+    background:#15b97a;
+    color:white;
+}
+
+.btn-dark{
+    background:#123d60;
+    color:white;
+}
+
+
+/* HERO TAGS */
+
+.hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:9px;
+
+    margin-top:25px;
+}
+
+.hero-tag{
+    padding:7px 12px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
+
+.profile-wrap{
+    display:flex;
+    justify-content:center;
+}
+
+.profile-card{
+    width:320px;
+
+    padding:15px;
+
+    border-radius:24px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.25);
+
+    text-align:center;
+}
+
+.profile-card img{
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:18px;
+
+    border:3px solid rgba(255,255,255,.8);
+}
+
+.profile-name{
+    font-size:22px;
+
+    font-weight:800;
+
+    margin-top:15px;
+}
+
+.profile-role{
+    font-size:14px;
+
+    color:#d7f2ff;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+    background:white;
+
+    border-bottom:
+    1px solid #dbe7ef;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.04);
+}
+
+.stats-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:10px;
+}
+
+.stat{
+    text-align:center;
+
+    padding:22px 10px;
+
+    border-right:
+    1px solid #e5edf3;
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat-icon{
+    font-size:25px;
+    color:#0878c9;
+}
+
+.stat strong{
+    display:block;
+
+    font-size:22px;
+
+    color:#0b4f87;
+}
+
+.stat span{
+    font-size:12px;
+
+    color:#718092;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services{
+    background:#f5f9fc;
+}
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+.service-card{
+    background:white;
+
+    border:
+    1px solid #dce8f0;
+
+    border-radius:14px;
+
+    padding:25px 20px;
+
+    box-shadow:
+    0 8px 25px rgba(14,68,103,.07);
+
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-6px);
+
+    border-color:#75c9ed;
+
+    box-shadow:
+    0 15px 35px rgba(14,68,103,.13);
+}
+
+.service-icon{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#e8f6fd;
+
+    color:#0878c9;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    color:#174f78;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+}
+
+.service-card p{
+    color:#6b7885;
+
+    font-size:14px;
+}
+
+.service-list{
+    list-style:none;
+
+    margin-top:13px;
+}
+
+.service-list li{
+    font-size:12px;
+
+    color:#5c6976;
+
+    margin:5px 0;
+}
+
+.service-list li:before{
+    content:"✓";
+
+    color:#12a879;
+
+    font-weight:bold;
+
+    margin-right:6px;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects{
+    background:white;
+}
+
+.project-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+
+    border:
+    1px solid #dbe7ef;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.06);
+
+    transition:.25s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.10);
+}
+
+.project-top{
+    height:120px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #dff4ff,
+        #eef9ff
+    );
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    color:#0b4f87;
+
+    margin-bottom:8px;
+}
+
+.project-content p{
+    color:#6c7885;
+
+    font-size:14px;
+}
+
+.project-tag{
+    display:inline-block;
+
+    margin-top:13px;
+
+    padding:5px 9px;
+
+    border-radius:15px;
+
+    background:#edf7fc;
+
+    color:#0878c9;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about{
+    background:#f5f9fc;
+}
+
+.about-grid{
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:30px;
+
+    align-items:stretch;
+}
+
+.about-card{
+    background:white;
+
+    border:
+    1px solid #dce7ef;
+
+    border-radius:16px;
+
+    padding:30px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.05);
+}
+
+.about-card h3{
+    color:#0b4f87;
+
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#637281;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+}
+
+.about-points{
+    list-style:none;
+}
+
+.about-points li{
+    padding:9px 0;
+
+    border-bottom:
+    1px solid #edf1f4;
+
+    color:#566675;
+
+    font-size:14px;
+}
+
+.about-points li:before{
+    content:"◆";
+
+    color:#0878c9;
+
+    font-size:10px;
+
+    margin-right:9px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills{
+    background:white;
+}
+
+.skill-box{
+    background:#f5f9fc;
+
+    border:
+    1px solid #dce7ef;
+
+    border-radius:16px;
+
+    padding:30px;
+}
+
+.skill-tags{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    justify-content:center;
+}
+
+.skill{
+    padding:9px 14px;
+
+    border-radius:20px;
+
+    background:white;
+
+    border:
+    1px solid #cfe0ea;
+
+    color:#27516f;
+
+    font-size:13px;
+
+    transition:.2s;
+}
+
+.skill:hover{
+    border-color:#0878c9;
+
+    color:#0878c9;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience{
+    background:#f5f9fc;
+}
+
 .timeline{
-  border-left:2px solid #48b9ff;
-  padding-left:25px;
+    max-width:900px;
+
+    margin:auto;
+
+    border-left:
+    3px solid #0878c9;
+
+    padding-left:28px;
 }
 
 .timeline-item{
-  margin-bottom:30px;
+    position:relative;
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:22px;
+
+    border-radius:12px;
+
+    border:
+    1px solid #dce7ef;
+
+    box-shadow:
+    0 7px 20px rgba(0,0,0,.05);
+}
+
+.timeline-item:before{
+    content:"";
+
+    position:absolute;
+
+    left:-39px;
+
+    top:28px;
+
+    width:16px;
+    height:16px;
+
+    border-radius:50%;
+
+    background:#0878c9;
+
+    border:
+    4px solid #dff4ff;
 }
 
 .timeline-item h3{
-  color:#48b9ff;
+    color:#0b4f87;
+
+    margin-bottom:4px;
+}
+
+.timeline-date{
+    color:#0878c9;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
 }
 
 .timeline-item p{
-  color:#aabbd0;
+    color:#667482;
+
+    font-size:14px;
 }
 
-/* CONTACT */
-.contact-box{
-  background:linear-gradient(145deg,#10243b,#0d1c30);
-  border:1px solid #2b405b;
-  border-radius:22px;
-  padding:40px;
-  text-align:center;
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+    background:
+    linear-gradient(
+        135deg,
+        #063b67,
+        #087fc4
+    );
+
+    color:white;
+
+    text-align:center;
 }
 
-.contact-buttons{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:15px;
-  margin-top:25px;
+.cta h2{
+    font-size:38px;
+
+    margin-bottom:10px;
 }
 
-/* FOOTER */
+.cta p{
+    color:#d8f2ff;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+.cta-buttons{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    background:white;
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.contact-card{
+    text-align:center;
+
+    padding:30px;
+
+    border:
+    1px solid #dce7ef;
+
+    border-radius:15px;
+
+    background:#f8fbfd;
+}
+
+.contact-icon{
+    font-size:30px;
+
+    color:#0878c9;
+
+    margin-bottom:10px;
+}
+
+.contact-card h3{
+    color:#174f78;
+
+    margin-bottom:7px;
+}
+
+.contact-card p{
+    color:#687789;
+
+    font-size:14px;
+
+    word-break:break-word;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
 footer{
-  border-top:1px solid #243650;
-  padding:30px 0;
-  text-align:center;
-  color:#8093aa;
+    background:#09243c;
+
+    color:#d8eaf6;
+
+    padding:35px 0;
+
+    text-align:center;
 }
 
-/* MOBILE */
+.footer-name{
+    font-size:21px;
+
+    font-weight:bold;
+
+    margin-bottom:6px;
+}
+
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin:15px 0;
+}
+
+.footer-links a{
+    color:#b7d5e8;
+
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+.copyright{
+    color:#8caabd;
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:1000px){
+
+    .service-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .project-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+
 @media(max-width:800px){
 
-  .navlinks{
-    display:none;
-  }
+    .nav-links{
+        display:none;
+    }
 
-  .hero{
-    padding:55px 0;
-  }
+    .hero{
+        min-height:auto;
 
-  .hero-grid{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
+        padding:
+        65px 0;
+    }
 
-  .hero-text{
-    margin:auto;
-  }
+    .hero-grid{
+        grid-template-columns:1fr;
 
-  .buttons{
-    justify-content:center;
-  }
+        text-align:center;
 
-  .grid{
-    grid-template-columns:1fr;
-  }
+        gap:40px;
+    }
 
-  section{
-    padding:60px 0;
-  }
+    .hero-description{
+        margin:auto;
+    }
 
-  .profile-card{
-    max-width:360px;
-    margin:auto;
-  }
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-tags{
+        justify-content:center;
+    }
+
+    .profile-card{
+        width:290px;
+
+        margin:auto;
+    }
+
+    .profile-card img{
+        height:350px;
+    }
+
+    .stats-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .stat{
+        border-right:none;
+
+        border-bottom:
+        1px solid #e5edf3;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
 }
+
+@media(max-width:600px){
+
+    section{
+        padding:55px 0;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero-title{
+        font-size:18px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .profile-card{
+        width:260px;
+    }
+
+    .profile-card img{
+        height:320px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+
+    .timeline{
+        padding-left:20px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / SAFE HTML
+========================================================= */
+
+button:focus,
+a:focus{
+    outline:2px solid #48b9ff;
+    outline-offset:3px;
+}
+
+
+/* =========================================================
+   END OF STYLES
+========================================================= */
+
 </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-  <div class="container navbar">
-    <div class="logo">
-      ROHIT<span> LOHANI</span>
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
+
+<nav class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="#home" class="logo">
+            ROHIT<span> LOHANI</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#contact" class="nav-button">
+                Contact
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
 </nav>
 
 
-<!-- HERO -->
-<header class="hero">
-  <div class="container hero-grid">
 
-    <div>
-      <div class="badge">Professional Engineering Portfolio</div>
+<!-- =======================================================
+     HERO / HOME
+======================================================= -->
 
-      <h1>
-        Electrical &<br>
-        <span>Instrumentation</span><br>
-        Design Engineer
-      </h1>
+<header class="hero" id="home">
 
-      <p class="hero-text">
-        Electrical, Instrumentation, Control and Industrial Design
-        support for STP, CETP, ETP, CBG and water treatment projects.
-      </p>
+    <div class="container hero-grid">
 
-      <div class="buttons">
-        <a class="btn btn-primary" href="#contact">
-          Contact Me
-        </a>
 
-        <a class="btn btn-secondary" href="#projects">
-          View Projects
-        </a>
-      </div>
+        <div>
 
-      <div class="tags">
-        <span class="tag">Electrical Design</span>
-        <span class="tag">Instrumentation</span>
-        <span class="tag">PLC / SCADA</span>
-        <span class="tag">STP / CETP</span>
-        <span class="tag">CBG Plants</span>
-        <span class="tag">Civil Design</span>
-      </div>
+            <div class="hero-small">
+                Professional Engineering Portfolio
+            </div>
+
+
+            <h1>
+
+                Designing
+                <span>Reliable</span>
+                Engineering Solutions
+
+            </h1>
+
+
+            <div class="hero-title">
+
+                Electrical, Instrumentation & Civil Design Engineer
+
+            </div>
+
+
+            <p class="hero-description">
+
+                Engineering design and project support for
+                Water Treatment Plants, STP, CETP, ETP,
+                CBG Plants and industrial projects.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#contact"
+                    class="btn btn-white">
+
+                    Contact Me
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/919675649491"
+                    target="_blank"
+                    class="btn btn-green">
+
+                    📱 WhatsApp Me
+
+                </a>
+
+
+                <a
+                    href="mailto:rohitlohani90@gmail.com"
+                    class="btn btn-outline">
+
+                    ✉ Email Me
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-tags">
+
+                <span class="hero-tag">
+                    ⚡ Electrical Design
+                </span>
+
+                <span class="hero-tag">
+                    🎛 Instrumentation
+                </span>
+
+                <span class="hero-tag">
+                    🏗 Civil Design
+                </span>
+
+                <span class="hero-tag">
+                    💻 PLC / SCADA
+                </span>
+
+                <span class="hero-tag">
+                    📐 Drafting
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="profile-wrap">
+
+            <div class="profile-card">
+
+                <img
+                    src="profile.jpg"
+                    alt="Rohit Lohani - Engineering Design Professional">
+
+                <div class="profile-name">
+                    Rohit Lohani
+                </div>
+
+                <div class="profile-role">
+                    Electrical, Instrumentation & Civil Design Engineer
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-
-    <div class="profile-card">
-
-      <!-- PHOTO -->
-      <img src="profile.jpg" alt="Rohit Lohani">
-
-      <h2>Rohit Lohani</h2>
-
-      <p>
-        Electrical & Instrumentation Design Engineer
-      </p>
-
-    </div>
-
-  </div>
 </header>
 
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
 
-    <h2 class="section-title">About Me</h2>
+<!-- =======================================================
+     STATS
+======================================================= -->
 
-    <p class="section-sub">
-      Engineering design and project support
-    </p>
+<section class="stats">
 
-    <div class="card">
+    <div class="container stats-grid">
 
-      <p>
-        I am an Electrical & Instrumentation Engineer with
-        practical experience in industrial and water treatment
-        projects including STP, CETP, ETP and CBG plants.
-      </p>
 
-      <br>
+        <div class="stat">
 
-      <p>
-        My work includes electrical design, instrumentation
-        engineering, PLC/SCADA systems, I/O allocation,
-        SLD preparation, cable sizing, MCC and panel-related
-        engineering and commissioning support.
-      </p>
+            <div class="stat-icon">
+                ⚙
+            </div>
 
-      <br>
+            <strong>
+                2+
+            </strong>
 
-      <p>
-        I also have an interest in Civil Design and integrated
-        engineering coordination for industrial projects.
-      </p>
+            <span>
+                Years of Experience
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                ⚡
+            </div>
+
+            <strong>
+                10+
+            </strong>
+
+            <span>
+                Projects Worked On
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                📐
+            </div>
+
+            <strong>
+                Design
+            </strong>
+
+            <span>
+                Engineering Support
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon">
+                📍
+            </div>
+
+            <strong>
+                India
+            </strong>
+
+            <span>
+                Available for Projects
+            </span>
+
+        </div>
+
 
     </div>
 
-  </div>
 </section>
 
 
-<!-- SERVICES -->
-<section id="services">
 
-  <div class="container">
+<!-- =======================================================
+     ABOUT
+======================================================= -->
 
-    <h2 class="section-title">Design Services</h2>
+<section class="about" id="about">
 
-    <p class="section-sub">
-      Engineering capabilities
-    </p>
+    <div class="container">
 
-    <div class="grid">
 
-      <div class="card">
-        <h3>⚡ Electrical Design</h3>
-        <p>
-          SLD preparation, load schedules, feeder selection,
-          cable sizing, MCC documentation, panel schedules
-          and electrical design support.
-        </p>
-      </div>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-      <div class="card">
-        <h3>🎛 Instrumentation</h3>
-        <p>
-          Instrument selection, datasheets, instrument index,
-          I/O allocation, 4-20 mA signals, DI/DO/AI/AO,
-          transmitters and field instruments.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>💻 PLC / SCADA</h3>
-        <p>
-          PLC I/O engineering, control system documentation,
-          HMI/SCADA engineering, signal mapping and
-          instrumentation integration.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🏭 STP / CETP / ETP</h3>
-        <p>
-          Electrical and instrumentation engineering support
-          for water and wastewater treatment plants.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🔥 CBG Plant Engineering</h3>
-        <p>
-          Instrumentation and control support for gas handling,
-          scrubber, bio-reactor and gas analysis systems.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🏗 Civil Design</h3>
-        <p>
-          Civil design coordination, drawings, layouts,
-          project documentation and engineering support
-          for industrial and infrastructure projects.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects">
-
-  <div class="container">
-
-    <h2 class="section-title">Project Experience</h2>
-
-    <p class="section-sub">
-      Industrial engineering project exposure
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Water Treatment Projects</h3>
-        <p>
-          STP / CETP / ETP projects with electrical,
-          instrumentation and control engineering support.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>CBG Plant Systems</h3>
-        <p>
-          Instrumentation and control engineering for
-          scrubber, gas analyzer, bio-reactor and gas systems.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Control Systems</h3>
-        <p>
-          PLC, SCADA, HMI, I/O allocation and field
-          instrumentation integration.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Electrical Engineering</h3>
-        <p>
-          SLD, cable sizing, MCC feeders, motor feeders,
-          panel documentation and electrical calculations.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Instrumentation Engineering</h3>
-        <p>
-          Flow, pressure, level, temperature, pH,
-          conductivity and other process instruments.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Civil Design Support</h3>
-        <p>
-          Industrial layout and civil engineering
-          coordination with electrical and instrumentation
-          systems.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills">
-
-  <div class="container">
-
-    <h2 class="section-title">Technical Skills</h2>
-
-    <p class="section-sub">
-      Core engineering skills
-    </p>
-
-    <div class="tags">
-
-      <span class="tag">Electrical Design</span>
-      <span class="tag">Instrumentation Design</span>
-      <span class="tag">PLC</span>
-      <span class="tag">SCADA</span>
-      <span class="tag">HMI</span>
-      <span class="tag">SLD</span>
-      <span class="tag">MCC</span>
-      <span class="tag">Cable Sizing</span>
-      <span class="tag">Load Schedule</span>
-      <span class="tag">I/O Allocation</span>
-      <span class="tag">DI / DO</span>
-      <span class="tag">AI / AO</span>
-      <span class="tag">4-20 mA</span>
-      <span class="tag">Flow Meter</span>
-      <span class="tag">Pressure Transmitter</span>
-      <span class="tag">Level Transmitter</span>
-      <span class="tag">RTD</span>
-      <span class="tag">pH / ORP</span>
-      <span class="tag">STP</span>
-      <span class="tag">CETP</span>
-      <span class="tag">ETP</span>
-      <span class="tag">CBG</span>
-      <span class="tag">Civil Design</span>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- WORKFLOW -->
-<section>
-
-  <div class="container">
-
-    <h2 class="section-title">How I Work</h2>
-
-    <p class="section-sub">
-      Engineering workflow
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>01 — Requirement</h3>
-        <p>
-          Understand project requirements, process data,
-          equipment list and client specifications.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>02 — Engineering</h3>
-        <p>
-          Prepare calculations, drawings, equipment
-          schedules, instrumentation and design documents.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>03 — Coordination</h3>
-        <p>
-          Coordinate electrical, instrumentation, civil,
-          mechanical and process requirements.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact">
-
-  <div class="container">
-
-    <div class="contact-box">
-
-      <h2 class="section-title">
-        Let's Work Together
-      </h2>
-
-      <p class="section-sub">
-        For Electrical, Instrumentation, Control or Design projects,
-        feel free to contact me.
-      </p>
-
-      <div class="contact-buttons">
-
-        <a class="btn btn-primary"
-           href="https://wa.me/919675649491"
-           target="_blank">
-          📱 WhatsApp Me
-        </a>
-
-        <a class="btn btn-secondary"
-           href="mailto:rohitlohani90@gmail.com">
-          📧 Email Me
-        </a>
-
-      </div>
-
-      <div class="tags" style="justify-content:center">
-
-        <span class="tag">
-          +91 9675649491
-        </span>
-
-        <span class="tag">
-          rohitlohani90@gmail.com
-        </span>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-  <div class="container">
-
-    <p>
-      © 2026 Rohit Lohani. All Rights Reserved.
-    </p>
-
-    <p>
-      Electrical • Instrumentation • Control • Civil Design
-    </p>
-
-  </div>
-
-</footer>
-<!-- Pages deployment refresh -->
-</body>
-</html>
+        <p class
