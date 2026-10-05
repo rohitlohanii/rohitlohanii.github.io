@@ -3,84 +3,720 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rohit Lohani - Electrical & Instrumentation Design Engineer providing electrical, instrumentation, PLC/SCADA and water treatment project design support.">
-<meta name="keywords" content="Rohit Lohani, Electrical Design Engineer, Instrumentation Design, STP, CETP, CBG, PLC, SCADA, SLD, MCC, Noida, Delhi">
+
 <title>Rohit Lohani | Electrical & Instrumentation Design Engineer</title>
+
+<meta name="description" content="Rohit Lohani - Electrical, Instrumentation, Control and Civil Design Engineer. STP, CETP, ETP, CBG, PLC, SCADA and industrial project design.">
+
 <style>
-:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243b;--text:#eef5ff;--muted:#a9b8cc;--accent:#48b9ff;--accent2:#7ce0c3;--line:#203852}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:linear-gradient(180deg,#07111f,#091525 45%,#07111f);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}
-.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:#fff}
-.hero{padding:95px 0 80px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
-.kicker{color:var(--accent2);font-weight:700;letter-spacing:1.6px;text-transform:uppercase;font-size:13px}
-h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:14px 0 22px;letter-spacing:-2px}
-.hero p{font-size:19px;color:var(--muted);max-width:720px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{padding:13px 19px;border-radius:10px;border:1px solid var(--line);font-weight:750}.primary{background:var(--accent);color:#04101b;border-color:var(--accent)}.secondary{background:var(--panel)}
-.hero-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);padding:28px;border-radius:22px;box-shadow:0 20px 70px #0005}.hero-card .big{font-size:44px;font-weight:850}.hero-card small{color:var(--muted)}
-section{padding:78px 0;border-top:1px solid rgba(32,56,82,.65)}.section-title{font-size:34px;margin:0 0 12px}.section-sub{color:var(--muted);max-width:760px;margin:0 0 32px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(13,27,46,.78);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
-.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tag{border:1px solid var(--line);padding:8px 11px;border-radius:999px;color:#c9d7e8;font-size:13px;background:#0b192b}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{padding:25px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0e2035,#0a1728)}.project .type{color:var(--accent2);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.project h3{font-size:22px;margin:9px 0}.project p{color:var(--muted)}
-.process{counter-reset:step}.step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}.num{width:34px;height:34px;flex:none;border-radius:50%;background:#14304b;color:var(--accent);display:grid;place-items:center;font-weight:800}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contactbox{padding:30px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.contactbox p{color:var(--muted)}
-footer{padding:35px 0;color:#8394aa;font-size:13px}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:65px}.grid{grid-template-columns:1fr 1fr}.projects,.contact{grid-template-columns:1fr}.navlinks{display:none}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}h1{letter-spacing:-1px}.hero p{font-size:17px}}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#07111f;
+  color:#eaf2ff;
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:92%;
+  max-width:1150px;
+  margin:auto;
+}
+
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,17,31,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #243650;
+}
+
+.navbar{
+  min-height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:800;
+  color:#48b9ff;
+}
+
+.logo span{
+  color:white;
+}
+
+.navlinks{
+  display:flex;
+  gap:25px;
+  font-size:14px;
+}
+
+.navlinks a:hover{
+  color:#48b9ff;
+}
+
+/* HERO */
+.hero{
+  padding:85px 0;
+  background:
+    radial-gradient(circle at 80% 20%,#123a61 0,transparent 35%),
+    linear-gradient(135deg,#07111f,#0d1c30);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.4fr .8fr;
+  gap:55px;
+  align-items:center;
+}
+
+.badge{
+  color:#48b9ff;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+
+h1{
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.05;
+  margin-bottom:20px;
+}
+
+h1 span{
+  color:#48b9ff;
+}
+
+.hero-text{
+  color:#aabbd0;
+  font-size:18px;
+  max-width:720px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:30px;
+}
+
+.btn{
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:bold;
+  border:1px solid #48b9ff;
+  display:inline-block;
+}
+
+.btn-primary{
+  background:#48b9ff;
+  color:#07111f;
+}
+
+.btn-secondary{
+  background:#10243b;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.profile-card{
+  background:#10243b;
+  border:1px solid #2b405b;
+  padding:25px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 20px 70px rgba(0,0,0,.3);
+}
+
+.profile-card img{
+  width:230px;
+  height:300px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:20px;
+  border:3px solid #48b9ff;
+}
+
+.profile-card h2{
+  margin-top:18px;
+}
+
+.profile-card p{
+  color:#aabbd0;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 0;
+}
+
+.section-title{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.section-sub{
+  color:#91a4bb;
+  margin-bottom:35px;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#0d1c30;
+  border:1px solid #243650;
+  border-radius:16px;
+  padding:25px;
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#48b9ff;
+}
+
+.card h3{
+  color:#48b9ff;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#aabbd0;
+}
+
+/* TAGS */
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:25px;
+}
+
+.tag{
+  padding:8px 13px;
+  border-radius:30px;
+  background:#10243b;
+  border:1px solid #29425f;
+  color:#d7e7f8;
+  font-size:14px;
+}
+
+/* EXPERIENCE */
+.timeline{
+  border-left:2px solid #48b9ff;
+  padding-left:25px;
+}
+
+.timeline-item{
+  margin-bottom:30px;
+}
+
+.timeline-item h3{
+  color:#48b9ff;
+}
+
+.timeline-item p{
+  color:#aabbd0;
+}
+
+/* CONTACT */
+.contact-box{
+  background:linear-gradient(145deg,#10243b,#0d1c30);
+  border:1px solid #2b405b;
+  border-radius:22px;
+  padding:40px;
+  text-align:center;
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:25px;
+}
+
+/* FOOTER */
+footer{
+  border-top:1px solid #243650;
+  padding:30px 0;
+  text-align:center;
+  color:#8093aa;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .hero{
+    padding:55px 0;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-text{
+    margin:auto;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .profile-card{
+    max-width:360px;
+    margin:auto;
+  }
+}
 </style>
 </head>
-<body>
-<nav><div class="wrap navin"><div class="brand">ROHIT <span>LOHANI</span></div><div class="navlinks"><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
 
-<header class="wrap hero">
-<div>
-<div class="kicker">Electrical • Instrumentation • Design</div>
-<h1>Engineering designs that are ready for execution.</h1>
-<p>I provide practical Electrical & Instrumentation design support for water treatment, STP, CETP and CBG projects—covering drawings, schedules, I/O engineering and control-system documentation.</p>
-<div class="cta">
-<a class="btn primary" href="#contact">Discuss Your Project</a>
-<a class="btn secondary" href="#services">View Services</a>
-</div>
-<div class="tags"><span class="tag">STP / ETP / CETP</span><span class="tag">CBG Plants</span><span class="tag">PLC / SCADA</span><span class="tag">Electrical Design</span></div>
-</div>
-<div class="hero-card"><small>Professional profile</small><div class="big">E&I</div><p>Electrical & Instrumentation Design Engineer</p><hr style="border:0;border-top:1px solid var(--line)"><p><strong>Project focus</strong><br>Water treatment • Process plants • Control & instrumentation</p></div>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container navbar">
+    <div class="logo">
+      ROHIT<span> LOHANI</span>
+    </div>
+
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="badge">Professional Engineering Portfolio</div>
+
+      <h1>
+        Electrical &<br>
+        <span>Instrumentation</span><br>
+        Design Engineer
+      </h1>
+
+      <p class="hero-text">
+        Electrical, Instrumentation, Control and Industrial Design
+        support for STP, CETP, ETP, CBG and water treatment projects.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#contact">
+          Contact Me
+        </a>
+
+        <a class="btn btn-secondary" href="#projects">
+          View Projects
+        </a>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Electrical Design</span>
+        <span class="tag">Instrumentation</span>
+        <span class="tag">PLC / SCADA</span>
+        <span class="tag">STP / CETP</span>
+        <span class="tag">CBG Plants</span>
+        <span class="tag">Civil Design</span>
+      </div>
+    </div>
+
+
+    <div class="profile-card">
+
+      <!-- PHOTO -->
+      <img src="profile.jpg" alt="Rohit Lohani">
+
+      <h2>Rohit Lohani</h2>
+
+      <p>
+        Electrical & Instrumentation Design Engineer
+      </p>
+
+    </div>
+
+  </div>
 </header>
 
-<section id="services"><div class="wrap"><h2 class="section-title">Design Services</h2><p class="section-sub">Support for EPCs, consultants, contractors and plant owners who need dependable engineering documentation and design execution support.</p>
-<div class="grid">
-<div class="card"><h3>Electrical Design</h3><p>SLD, load schedules, cable sizing, feeder details, panel/MCC documentation and electrical design support.</p></div>
-<div class="card"><h3>Instrumentation Design</h3><p>Instrument index, datasheet support, I/O lists, signal allocation, wiring and instrumentation documentation.</p></div>
-<div class="card"><h3>PLC / SCADA Engineering</h3><p>PLC I/O engineering, DI/DO/AI/AO allocation, control-system documentation and HMI/SCADA support.</p></div>
-<div class="card"><h3>Water Treatment Projects</h3><p>Electrical & instrumentation support for STP, ETP and CETP projects across process and utility systems.</p></div>
-<div class="card"><h3>CBG Plant Engineering</h3><p>Instrumentation and control documentation for gas handling, scrubber, analyzer and process systems.</p></div>
-<div class="card"><h3>As-Built & Documentation</h3><p>Drawing updates, schedules, engineering registers and commissioning-oriented documentation.</p></div>
-</div></div></section>
 
-<section id="projects"><div class="wrap"><h2 class="section-title">Project Experience</h2><p class="section-sub">Experience across plant engineering, commissioning support and design coordination.</p>
-<div class="projects">
-<div class="project"><div class="type">Water Treatment</div><h3>STP / CETP Projects</h3><p>Electrical & instrumentation engineering exposure across treatment plants, including field instruments, MCCs, panels, PLC/SCADA and plant documentation.</p></div>
-<div class="project"><div class="type">Process / Gas</div><h3>CBG Plant Systems</h3><p>Instrumentation and control-system exposure involving scrubber systems, gas analyzers, flow, pressure, level and conductivity measurements.</p></div>
-<div class="project"><div class="type">Controls</div><h3>PLC & I/O Engineering</h3><p>Practical experience with DI, DO, AI, AO allocation, signal types, 24 VDC loops and commissioning checks.</p></div>
-<div class="project"><div class="type">Design Support</div><h3>Electrical & Instrumentation Documentation</h3><p>Engineering coordination covering SLDs, cable information, instrument schedules, wiring and site-to-design feedback.</p></div>
-</div></div></section>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
 
-<section id="about"><div class="wrap"><h2 class="section-title">About Rohit</h2><p class="section-sub">Electrical & Instrumentation Engineer with a B.Tech in Electrical Engineering and practical experience in water-treatment and process-plant projects.</p>
-<div class="card"><h3>Why work with me?</h3><p>My approach combines site-level understanding with design documentation. The goal is simple: drawings and engineering information that are clear enough for procurement, panel fabrication, installation, commissioning and client review.</p>
-<div class="tags"><span class="tag">Electrical Engineering</span><span class="tag">Instrumentation</span><span class="tag">PLC / SCADA</span><span class="tag">Plant Engineering</span><span class="tag">Commissioning Support</span></div></div></div></section>
+    <h2 class="section-title">About Me</h2>
 
-<section><div class="wrap"><h2 class="section-title">How It Works</h2><div class="process">
-<div class="step"><div class="num">1</div><div><strong>Share your requirement</strong><br><span style="color:var(--muted)">Send drawings, scope, BOQ or simply explain what you need.</span></div></div>
-<div class="step"><div class="num">2</div><div><strong>Scope & quotation</strong><br><span style="color:var(--muted)">We define deliverables, inputs, timeline and commercial scope.</span></div></div>
-<div class="step"><div class="num">3</div><div><strong>Engineering delivery</strong><br><span style="color:var(--muted)">Design documents are prepared and shared for review.</span></div></div>
-<div class="step"><div class="num">4</div><div><strong>Revision & handover</strong><br><span style="color:var(--muted)">Comments are incorporated and final documents are handed over.</span></div></div>
-</div></div></section>
+    <p class="section-sub">
+      Engineering design and project support
+    </p>
 
-<section id="contact"><div class="wrap contact">
-<div><h2 class="section-title">Have a project?</h2><p class="section-sub">If you need Electrical or Instrumentation design support, send the project scope and required deliverables.</p></div>
-<div class="contactbox"><h3>Request a Design Discussion</h3><p>Email and WhatsApp details can be added here before publishing.</p><div class="cta"><a class="btn primary" href="mailto:YOUR_EMAIL@example.com?subject=Electrical%20%26%20Instrumentation%20Design%20Enquiry">Email Me</a><a class="btn secondary" href="https://wa.me/YOUR_NUMBER">WhatsApp</a></div></div>
-</div></section>
+    <div class="card">
 
-<footer><div class="wrap">© 2026 Rohit Lohani • Electrical & Instrumentation Design Engineering</div></footer>
+      <p>
+        I am an Electrical & Instrumentation Engineer with
+        practical experience in industrial and water treatment
+        projects including STP, CETP, ETP and CBG plants.
+      </p>
+
+      <br>
+
+      <p>
+        My work includes electrical design, instrumentation
+        engineering, PLC/SCADA systems, I/O allocation,
+        SLD preparation, cable sizing, MCC and panel-related
+        engineering and commissioning support.
+      </p>
+
+      <br>
+
+      <p>
+        I also have an interest in Civil Design and integrated
+        engineering coordination for industrial projects.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+  <div class="container">
+
+    <h2 class="section-title">Design Services</h2>
+
+    <p class="section-sub">
+      Engineering capabilities
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>⚡ Electrical Design</h3>
+        <p>
+          SLD preparation, load schedules, feeder selection,
+          cable sizing, MCC documentation, panel schedules
+          and electrical design support.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎛 Instrumentation</h3>
+        <p>
+          Instrument selection, datasheets, instrument index,
+          I/O allocation, 4-20 mA signals, DI/DO/AI/AO,
+          transmitters and field instruments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💻 PLC / SCADA</h3>
+        <p>
+          PLC I/O engineering, control system documentation,
+          HMI/SCADA engineering, signal mapping and
+          instrumentation integration.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏭 STP / CETP / ETP</h3>
+        <p>
+          Electrical and instrumentation engineering support
+          for water and wastewater treatment plants.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔥 CBG Plant Engineering</h3>
+        <p>
+          Instrumentation and control support for gas handling,
+          scrubber, bio-reactor and gas analysis systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏗 Civil Design</h3>
+        <p>
+          Civil design coordination, drawings, layouts,
+          project documentation and engineering support
+          for industrial and infrastructure projects.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <div class="container">
+
+    <h2 class="section-title">Project Experience</h2>
+
+    <p class="section-sub">
+      Industrial engineering project exposure
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Water Treatment Projects</h3>
+        <p>
+          STP / CETP / ETP projects with electrical,
+          instrumentation and control engineering support.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CBG Plant Systems</h3>
+        <p>
+          Instrumentation and control engineering for
+          scrubber, gas analyzer, bio-reactor and gas systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Control Systems</h3>
+        <p>
+          PLC, SCADA, HMI, I/O allocation and field
+          instrumentation integration.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Electrical Engineering</h3>
+        <p>
+          SLD, cable sizing, MCC feeders, motor feeders,
+          panel documentation and electrical calculations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Instrumentation Engineering</h3>
+        <p>
+          Flow, pressure, level, temperature, pH,
+          conductivity and other process instruments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Civil Design Support</h3>
+        <p>
+          Industrial layout and civil engineering
+          coordination with electrical and instrumentation
+          systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+  <div class="container">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <p class="section-sub">
+      Core engineering skills
+    </p>
+
+    <div class="tags">
+
+      <span class="tag">Electrical Design</span>
+      <span class="tag">Instrumentation Design</span>
+      <span class="tag">PLC</span>
+      <span class="tag">SCADA</span>
+      <span class="tag">HMI</span>
+      <span class="tag">SLD</span>
+      <span class="tag">MCC</span>
+      <span class="tag">Cable Sizing</span>
+      <span class="tag">Load Schedule</span>
+      <span class="tag">I/O Allocation</span>
+      <span class="tag">DI / DO</span>
+      <span class="tag">AI / AO</span>
+      <span class="tag">4-20 mA</span>
+      <span class="tag">Flow Meter</span>
+      <span class="tag">Pressure Transmitter</span>
+      <span class="tag">Level Transmitter</span>
+      <span class="tag">RTD</span>
+      <span class="tag">pH / ORP</span>
+      <span class="tag">STP</span>
+      <span class="tag">CETP</span>
+      <span class="tag">ETP</span>
+      <span class="tag">CBG</span>
+      <span class="tag">Civil Design</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- WORKFLOW -->
+<section>
+
+  <div class="container">
+
+    <h2 class="section-title">How I Work</h2>
+
+    <p class="section-sub">
+      Engineering workflow
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>01 — Requirement</h3>
+        <p>
+          Understand project requirements, process data,
+          equipment list and client specifications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>02 — Engineering</h3>
+        <p>
+          Prepare calculations, drawings, equipment
+          schedules, instrumentation and design documents.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>03 — Coordination</h3>
+        <p>
+          Coordinate electrical, instrumentation, civil,
+          mechanical and process requirements.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-box">
+
+      <h2 class="section-title">
+        Let's Work Together
+      </h2>
+
+      <p class="section-sub">
+        For Electrical, Instrumentation, Control or Design projects,
+        feel free to contact me.
+      </p>
+
+      <div class="contact-buttons">
+
+        <a class="btn btn-primary"
+           href="https://wa.me/919675649491"
+           target="_blank">
+          📱 WhatsApp Me
+        </a>
+
+        <a class="btn btn-secondary"
+           href="mailto:rohitlohani90@gmail.com">
+          📧 Email Me
+        </a>
+
+      </div>
+
+      <div class="tags" style="justify-content:center">
+
+        <span class="tag">
+          +91 9675649491
+        </span>
+
+        <span class="tag">
+          rohitlohani90@gmail.com
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="container">
+
+    <p>
+      © 2026 Rohit Lohani. All Rights Reserved.
+    </p>
+
+    <p>
+      Electrical • Instrumentation • Control • Civil Design
+    </p>
+
+  </div>
+
+</footer>
+
 </body>
 </html>
